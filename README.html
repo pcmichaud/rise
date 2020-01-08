@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Accounting for the Rise of Health Spending and Longevity</title>
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+        
+        <style>
+.task-list-item { list-style-type: none; } .task-list-item-checkbox { margin-left: -20px; vertical-align: middle; }
+</style>
+        <style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        
+        
+    </head>
+    <body class="vscode-light">
+        <h1 id="accounting-for-the-rise-of-health-spending-and-longevity">Accounting for the Rise of Health Spending and Longevity</h1>
+<p>Fonseca, Michaud, Galama and Kapteyn
+<a href="https://academic.oup.com/jeea">Journal of European Economic Association</a></p>
+<p>December 2019</p>
+<h2 id="general-software-needed">General software needed</h2>
+<p>Four pieces of software are needed to reproduce the results in the paper:</p>
+<ul>
+<li>Fortran compiler: we use <a href="https://gcc.gnu.org/wiki/GFortran">gfortran</a></li>
+<li>MPI: we use <a href="https://www.open-mpi.org/">openmpi</a></li>
+<li>Python: we use <a href="https://www.anaconda.com/distribution/">Anaconda Python distribution</a></li>
+<li>Stata: <a href="https://www.stata.com/">Stata MP v15</a></li>
+</ul>
+<p>Other versions and compilers are possible but users will need to make appropriate changes to programs and makefile. The main fortran executables were executed on an HPCC running the scheduler <a href="https://slurm.schedmd.com/documentation.html">SLURM</a>. All other programs can run on a standard machine. Paths need to be set at various places clearly identified at the beginning of each programs.</p>
+<h2 id="data-access">Data Access</h2>
+<p>The following raw micro datasets are used for this project.</p>
+<ul>
+<li>The Panel Study of Income Dynamics: We use the files provided by <a href="https://cnef.ehe.osu.edu/">The Cross National Equivalent File project</a>.</li>
+<li>The Medical Expenditure Panel Study: We use the files from the <a href="https://www.meps.ahrq.gov/mepsweb/">website</a>.</li>
+<li>The National Health Interview Survey Mortality Follow-Up Study: We use the files available at this <a href="https://www.cdc.gov/nchs/data-linkage/mortality.htm">website</a>.</li>
+<li>The Health and Retirement Study: We have used version G of <a href="https://www.rand.org/well-being/social-and-behavioral-policy/centers/aging/dataprod/hrs-data.html">RANDHRS</a></li>
+<li>The National Health Expenditure Accounts: <a href="https://www.cms.gov/Research-Statistics-Data-and-Systems/Statistics-Trends-and-Reports/NationalHealthExpendData/index">website</a></li>
+<li>Other small datasets and parameter files described in paper</li>
+</ul>
+<p>They are included in the <a href="data/">data</a> folder. But users are responsible for obtaining registration to use these files with the relevant organizations (for example HRS) and the linked mortality data for MEPS-NHIS.</p>
+<h2 id="code-and-data-archive">Code and Data Archive</h2>
+<p>This archive has the following directories:</p>
+<ul>
+<li>
+<p><a href="do/">do</a>: contains do (stata program files) to generate all the inputs and some of the figures and tables. The main do-file is <a href="http://master-dataprep.do">master-dataprep.do</a> which runs all the stata scripts.</p>
+</li>
+<li>
+<p><a href="py/">py</a>: contains all python programs and notebooks that generate also inputs as well as tables and figures in paper.</p>
+</li>
+<li>
+<p><a href="data/">data</a>: descrivbed above. contains all data used in paper. the folder clean will contain stata datasets created by the programs.</p>
+</li>
+<li>
+<p><a href="params/">params</a>: contains parameter files that are produced from do and py programs as well as settings to run the model.</p>
+</li>
+<li>
+<p><a href="figures/">figures</a> and <a href="tables/">tables</a>: these are empty but upon execution contain the outputs from do and py programs.</p>
+</li>
+<li>
+<p><a href="src/">src</a>: contains the source fortran files to run the model</p>
+</li>
+<li>
+<p><a href="runtime/">runtime</a>: contains the executables as well as the slurm bash scripts to run the different tables and figures.</p>
+</li>
+<li>
+<p><a href="lib/">lib</a>: contains two libraries used by the fortran programs: <a href="https://person.hst.aau.dk/magnus/pkgsrc-kolga/math/dcdflib.f/">dcdflib</a>, which is a statistical library and <a href="https://en.wikipedia.org/wiki/NEWUOA">newuoa</a> which contains the optimization routines.</p>
+</li>
+</ul>
+<h2 id="compilation-of-fortran-code">Compilation of Fortran Code</h2>
+<p>To build executables, there is a <a href="Makefile">Makefile</a> that is also supplied in the root directory of this archive. Please check carefully to adapt to the particular environment in which we run calculations. Running make at the terminal will create the executables estimate and generate.</p>
+<h2 id="estimation">Estimation</h2>
+<p>We run estimation in cohort mode.</p>
+<ul>
+<li>Set <a href="params/common/solve.info">params/commons/solve.info</a> to nz = 1 and zmin, zmax = 1940.</li>
+<li>Set an params/common/init_params_scnname.info where scnname is the scenario name you want to have. Check also that the <a href="params/common/estimation.info">params/common/moments.info</a> file uses the moments you want in estimation.</li>
+<li>There are settings for estimation that can be set in <a href="params/common/estimation.info">params/common/estimation.info</a></li>
+<li>executing mpiexec ./estimate scnname will execute your scenario.</li>
+<li>output will be directed to output/estimation</li>
+</ul>
+<p>Depending on starting values you use, this may take a number of days/weeks to run even if parallel computing is used.</p>
+<h2 id="simulating-from-a-scenario">Simulating from a Scenario</h2>
+<ul>
+<li>You can simulate in cohort or population mode. This is controlled by nz, zmin and zmax in <a href="params/common/solve.info">params/common/solve.info</a></li>
+<li>Set your scenario in params/scenarios/scenario_name.info. Multiple flags are possible.</li>
+<li>make sure your estimated params have been copied to params/common/esti_params.info. These will be used for simulation.</li>
+<li>run mpiexec ./generate scnname. Output is found in output/simulation.</li>
+</ul>
+<h2 id="tables-and-figures">Tables and Figures</h2>
+<p>The following list contains the source program used to create each table and figures.</p>
+<ul>
+<li>
+<p>Figure 1: <a href="do/fig1-Historical.ipynb">do/fig1-Historical.ipynb</a></p>
+</li>
+<li>
+<p>Figure 2: <a href="do/production32.do">do/production32.do</a></p>
+</li>
+<li>
+<p>Figure 3: <a href="py/fig3-fit.py">py/fig3-fit.py</a></p>
+</li>
+<li>
+<p>Figure 4: <a href="py/production.py">py/production.py</a></p>
+</li>
+<li>
+<p>Table 1: <a href="do/auxiliary32.do">do/auxiliary32.do</a></p>
+</li>
+<li>
+<p>Table 2: <a href="do/production32.do">do/production32.do</a></p>
+</li>
+<li>
+<p>Table 3: <a href="do/production32.do">do/production32.do</a></p>
+</li>
+<li>
+<p>Table 4: <a href="py/tab4-estimates.py">py/tab4-estimates.py</a></p>
+</li>
+<li>
+<p>Table 5: <a href="py/tab5-price-elasticity.py">py/tab5-price-elasticity.py</a></p>
+</li>
+<li>
+<p>Table 6: <a href="py/tab6-income-elasticity.py">py/tab6-income-elasticity.py</a></p>
+</li>
+<li>
+<p>Table 7: <a href="py/tab7-growth-pop.py">py/tab7-growth-pop.py</a></p>
+</li>
+<li>
+<p>Table 8: <a href="py/tab8-welfare.py">py/tab8-welfare.py</a></p>
+</li>
+<li>
+<p>Table 9: <a href="py/tab9-gradient.py">py/tab9-gradient.py</a></p>
+</li>
+</ul>
+<p>Appendix</p>
+<ul>
+<li>
+<p>Figure A.1: <a href="py/figA1-rules.py">py/figA1-rules.py</a></p>
+</li>
+<li>
+<p>Figure A.2: <a href="py/fig3-fit.py">py/fig3-fit.py</a></p>
+</li>
+<li>
+<p>Figure B.2: <a href="do/production32.do">do/production32.do</a></p>
+</li>
+<li>
+<p>Figure C.1: <a href="do/auxiliary32.do">do/auxiliary32.do</a></p>
+</li>
+<li>
+<p>Figure C.2: <a href="do/auxiliary32.do">do/auxiliary32.do</a></p>
+</li>
+<li>
+<p>Figure C.2: <a href="do/healthtrans.do">do/healthtrans.do</a></p>
+</li>
+<li>
+<p>Table B.1: <a href="do/stats-psid32.do">do/stats-psid32.do</a></p>
+</li>
+<li>
+<p>Table B.2: <a href="do/stats-meps32.do">do/stats-meps32.do</a></p>
+</li>
+<li>
+<p>Table C.2: <a href="do/auxiliary32.do">do/auxiliary32.do</a></p>
+</li>
+<li>
+<p>Table C.3: <a href="do/auxiliary32.do">do/auxiliary32.do</a></p>
+</li>
+</ul>
+
+    </body>
+    </html>

@@ -1,0 +1,6 @@
+gfortran -g -O3  -c bigden.f
+gfortran -g -O3 -c biglag.f
+gfortran -g -O3  -c newuoa.f
+gfortran -g -O3  -c newuob.f
+gfortran -g -O3  -c trsapp.f
+gfortran -g -O3  -c update.f

@@ -1,0 +1,31 @@
+nstatevars, 7
+ndecisionvars, 5
+nages, 96
+agemin, 25				
+nh, 4
+ne, 9
+nz, 1
+zmin, 1940
+zmax, 1940
+nf, 3
+nd, 2
+nw, 48
+wmin, 1.0d0
+wmax, 2.0e6
+name, 24
+amemin, 0.0
+amemax, 24.0e3
+nparh, 7
+npard, 5
+umin, -1.0e15
+medmax, 250.0e4
+curv, 0.5d0
+isave, T
+nsave, 7
+saveages,35, 45, 55, 70, 75, 80, 85
+ngridc, 30
+ngridm, 30
+
+# when running pop simulations, set these and nz = 15
+zmin, 1905
+zmax, 1980

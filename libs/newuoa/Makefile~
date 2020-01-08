@@ -1,0 +1,24 @@
+#  please change the variables FC and FFLAGS to match your fortran compiler
+
+FC = gfortran
+FFLAGS = -g -O3
+OBJ= ../obj
+
+main: bigden.o biglag.o  newuoa.o \
+      newuob.o trsapp.o update.o
+
+
+$(OBJ)/bigden.o: bigden.f
+	$(FC) $(FFLAGS) -J$(OBJ) -c bigden.f
+$(OBJ)/biglag.o: biglag.f
+	$(FC) $(FFLAGS) -J$(OBJ) -c biglag.f
+$(OBJ)/trsapp.o: trsapp.f
+	$(FC) $(FFLAGS) -J$(OBJ) -c trsapp.f
+$(OBJ)/newuoa.o: newuoa.f
+	$(FC) $(FFLAGS) -J$(OBJ) -c newuoa.f
+$(OBJ)/newuob.o: newuob.f
+	$(FC) $(FFLAGS) -J$(OBJ) -c newuob.f
+$(OBJ)/update.o: update.f
+	$(FC) $(FFLAGS) -J$(OBJ) -c update.f
+clean:
+	rm -rf *.o

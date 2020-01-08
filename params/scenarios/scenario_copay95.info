@@ -1,0 +1,12 @@
+progress, 0.0, F
+other,0.0, F
+wage, 0.02, F
+taxes, 1965, F
+cashmin, 1965, F
+ssben, 1965, F
+coverage,0.9125, F
+copay_mc,1.5, F
+copay_ei,3.0, F
+price,1.0, F   
+dwage,0.0, F
+dcopay,0.95,T

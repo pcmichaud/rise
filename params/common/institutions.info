@@ -1,0 +1,22 @@
+rrate, 0.04	
+npiabend, 2
+npiarate, 3
+nearntax, 2
+arf, 0.067
+drc, 0.07
+nra, 66
+era, 62
+mcare, 65
+piaben1, 642.0
+piaben2, 3872.0
+piarate1, 0.9
+piarate2, 0.32
+piarate3, 0.15
+earntaxrate1, 0.5
+earntaxrate2, 0
+earntaxgain, 10000.0
+rmin, 25
+rmax, 70
+hours_worked, 2000.0
+
+

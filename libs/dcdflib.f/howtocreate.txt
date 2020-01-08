@@ -1,0 +1,9 @@
+* Step 1
+go to src/
+compile gfortran -c *.f
+this will create a bunch of *.o files. 
+* Step 2
+Create a library. Check out website:
+http://www.oceanographers.net/forums/showthread.php?378-How-to-make-a-FORTRAN-library
+* on mac or linux, just issue:
+ar r dcdflib.a *.o 

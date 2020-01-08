@@ -1,0 +1,41 @@
+sigma, 3.0774349821102973,2.8,3.0,T
+psi, 0.71588355885863186, 0.65,0.75,T
+phi_good, 0.16384061, 0.2, 0.4, T
+phi_poor, 0.31595332, 0.2, 0.5, T
+beta, 0.96656810417105254, 0.96, 0.97, T
+alpha_poor, 0.1611072371, 0.1, 0.2, T
+alpha_good, -5.3091899068, -6.0, -4.0, T
+alpha_vgood, -6.760164849, -8.0, -5.0, T
+kapa_base, 0.0, 2.0, 4.0, F
+kapa_cash, 500.0d3, 0.0d0, 1.0d6, F 
+leisure_endow, 3102.223, 2500.0d0, 3500.0d0, T
+age_poor, 0.0, 0.0, 0.0, F
+age_good, -.0527256,-0.1,0.1, F
+age_vgood, -.1054228,-0.2,0.1, F
+theta_poor,0.0,0.0,0.0, F 
+theta_good, .6124402, 0.0, 2.0, F
+theta_vgood, 1.266343, 0.0, 2.0, F
+theta2_poor,0.0,0.0,0.0, F 
+theta2_good, -.0206929, -2.0, 2.0, F
+theta2_vgood,-.0400112, -2.0, 2.0, F
+poor_poor,0.0,0.0,0.0,F
+poor_good,0.0,0.0,0.0,F
+poor_vgood,0.0,0.0,0.0,F
+good_poor, 0.0, 0.0, 0.0, F
+good_good, 2.527637,0.0,3.0, F
+good_vgood,3.492382,0.0,5.0,F
+vgood_poor, 0.0,0.0,0.0,F
+vgood_good, 3.148639,0.0,5.0, F
+vgood_vgood, 6.065002,0.0,8.0, F
+base_poor,0.0,0.0,0.0,F
+base_good, -1.062134, -2.0, 0.0, F
+base_vgood, -2.744025, -5.0, 0.0, F
+prog_theta, 0.00708442127,0.007d0, 0.008d0, T
+prog_good, 0.0d0,0.005d0, 0.02d0, F
+prog_vgood, 0.0d0,0.005d0, 0.02d0, F
+prog_surv, 0.0d0,-0.02d0,0.02d0, F
+
+
+
+
+ 

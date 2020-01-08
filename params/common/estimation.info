@@ -1,0 +1,5 @@
+npar, 36
+alg, po
+nsim, 10000
+weight, T
+iload, F

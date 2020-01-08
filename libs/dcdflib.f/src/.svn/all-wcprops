@@ -1,0 +1,425 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/randltc/!svn/ver/5/trunk/dcdflib.f/src
+END
+psi.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/randltc/!svn/ver/5/trunk/dcdflib.f/src/psi.f
+END
+dexpm1.f
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/randltc/!svn/ver/5/trunk/dcdflib.f/src/dexpm1.f
+END
+alngam.f
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/randltc/!svn/ver/5/trunk/dcdflib.f/src/alngam.f
+END
+erfc1.f
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/randltc/!svn/ver/5/trunk/dcdflib.f/src/erfc1.f
+END
+cdff.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/randltc/!svn/ver/5/trunk/dcdflib.f/src/cdff.f
+END
+spmpar.f
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/randltc/!svn/ver/5/trunk/dcdflib.f/src/spmpar.f
+END
+cumnor.f
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/randltc/!svn/ver/5/trunk/dcdflib.f/src/cumnor.f
+END
+cdfpoi.f
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/randltc/!svn/ver/5/trunk/dcdflib.f/src/cdfpoi.f
+END
+bcorr.f
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/randltc/!svn/ver/5/trunk/dcdflib.f/src/bcorr.f
+END
+cumchi.f
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/randltc/!svn/ver/5/trunk/dcdflib.f/src/cumchi.f
+END
+apser.f
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/randltc/!svn/ver/5/trunk/dcdflib.f/src/apser.f
+END
+gamln1.f
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/randltc/!svn/ver/5/trunk/dcdflib.f/src/gamln1.f
+END
+dlanor.f
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/randltc/!svn/ver/5/trunk/dcdflib.f/src/dlanor.f
+END
+cdft.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/randltc/!svn/ver/5/trunk/dcdflib.f/src/cdft.f
+END
+gaminv.f
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/randltc/!svn/ver/5/trunk/dcdflib.f/src/gaminv.f
+END
+cumnbn.f
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/randltc/!svn/ver/5/trunk/dcdflib.f/src/cumnbn.f
+END
+cdffnc.f
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/randltc/!svn/ver/5/trunk/dcdflib.f/src/cdffnc.f
+END
+rlog1.f
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/randltc/!svn/ver/5/trunk/dcdflib.f/src/rlog1.f
+END
+cdfchn.f
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/randltc/!svn/ver/5/trunk/dcdflib.f/src/cdfchn.f
+END
+dt1.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/randltc/!svn/ver/5/trunk/dcdflib.f/src/dt1.f
+END
+bgrat.f
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/randltc/!svn/ver/5/trunk/dcdflib.f/src/bgrat.f
+END
+dinvnr.f
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/randltc/!svn/ver/5/trunk/dcdflib.f/src/dinvnr.f
+END
+dlngam.f
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/randltc/!svn/ver/5/trunk/dcdflib.f/src/dlngam.f
+END
+rlog.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/randltc/!svn/ver/5/trunk/dcdflib.f/src/rlog.f
+END
+basym.f
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/randltc/!svn/ver/5/trunk/dcdflib.f/src/basym.f
+END
+bfrac.f
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/randltc/!svn/ver/5/trunk/dcdflib.f/src/bfrac.f
+END
+cumbin.f
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/randltc/!svn/ver/5/trunk/dcdflib.f/src/cumbin.f
+END
+cumbet.f
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/randltc/!svn/ver/5/trunk/dcdflib.f/src/cumbet.f
+END
+rcomp.f
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/randltc/!svn/ver/5/trunk/dcdflib.f/src/rcomp.f
+END
+cdfgam.f
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/randltc/!svn/ver/5/trunk/dcdflib.f/src/cdfgam.f
+END
+gratio.f
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/randltc/!svn/ver/5/trunk/dcdflib.f/src/gratio.f
+END
+gam1.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/randltc/!svn/ver/5/trunk/dcdflib.f/src/gam1.f
+END
+exparg.f
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/randltc/!svn/ver/5/trunk/dcdflib.f/src/exparg.f
+END
+ipmpar.f
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/randltc/!svn/ver/5/trunk/dcdflib.f/src/ipmpar.f
+END
+cumf.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/randltc/!svn/ver/5/trunk/dcdflib.f/src/cumf.f
+END
+cumpoi.f
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/randltc/!svn/ver/5/trunk/dcdflib.f/src/cumpoi.f
+END
+gamln.f
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/randltc/!svn/ver/5/trunk/dcdflib.f/src/gamln.f
+END
+dstrem.f
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/randltc/!svn/ver/5/trunk/dcdflib.f/src/dstrem.f
+END
+dln1mx.f
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/randltc/!svn/ver/5/trunk/dcdflib.f/src/dln1mx.f
+END
+betaln.f
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/randltc/!svn/ver/5/trunk/dcdflib.f/src/betaln.f
+END
+stvaln.f
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/randltc/!svn/ver/5/trunk/dcdflib.f/src/stvaln.f
+END
+cumt.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/randltc/!svn/ver/5/trunk/dcdflib.f/src/cumt.f
+END
+esum.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/randltc/!svn/ver/5/trunk/dcdflib.f/src/esum.f
+END
+bpser.f
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/randltc/!svn/ver/5/trunk/dcdflib.f/src/bpser.f
+END
+cdfnor.f
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/randltc/!svn/ver/5/trunk/dcdflib.f/src/cdfnor.f
+END
+cumfnc.f
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/randltc/!svn/ver/5/trunk/dcdflib.f/src/cumfnc.f
+END
+erf.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/randltc/!svn/ver/5/trunk/dcdflib.f/src/erf.f
+END
+alnrel.f
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/randltc/!svn/ver/5/trunk/dcdflib.f/src/alnrel.f
+END
+cumchn.f
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/randltc/!svn/ver/5/trunk/dcdflib.f/src/cumchn.f
+END
+rexp.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/randltc/!svn/ver/5/trunk/dcdflib.f/src/rexp.f
+END
+fpser.f
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/randltc/!svn/ver/5/trunk/dcdflib.f/src/fpser.f
+END
+bratio.f
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/randltc/!svn/ver/5/trunk/dcdflib.f/src/bratio.f
+END
+cdfchi.f
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/randltc/!svn/ver/5/trunk/dcdflib.f/src/cdfchi.f
+END
+gamma.f
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/randltc/!svn/ver/5/trunk/dcdflib.f/src/gamma.f
+END
+dinvr.f
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/randltc/!svn/ver/5/trunk/dcdflib.f/src/dinvr.f
+END
+brcomp.f
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/randltc/!svn/ver/5/trunk/dcdflib.f/src/brcomp.f
+END
+devlpl.f
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/randltc/!svn/ver/5/trunk/dcdflib.f/src/devlpl.f
+END
+cdfnbn.f
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/randltc/!svn/ver/5/trunk/dcdflib.f/src/cdfnbn.f
+END
+dzror.f
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/randltc/!svn/ver/5/trunk/dcdflib.f/src/dzror.f
+END
+gsumln.f
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/randltc/!svn/ver/5/trunk/dcdflib.f/src/gsumln.f
+END
+dln1px.f
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/randltc/!svn/ver/5/trunk/dcdflib.f/src/dln1px.f
+END
+algdiv.f
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/randltc/!svn/ver/5/trunk/dcdflib.f/src/algdiv.f
+END
+dlnbet.f
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/randltc/!svn/ver/5/trunk/dcdflib.f/src/dlnbet.f
+END
+cumgam.f
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/randltc/!svn/ver/5/trunk/dcdflib.f/src/cumgam.f
+END
+dbetrm.f
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/randltc/!svn/ver/5/trunk/dcdflib.f/src/dbetrm.f
+END
+grat1.f
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/randltc/!svn/ver/5/trunk/dcdflib.f/src/grat1.f
+END
+brcmp1.f
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/randltc/!svn/ver/5/trunk/dcdflib.f/src/brcmp1.f
+END
+cdfbin.f
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/randltc/!svn/ver/5/trunk/dcdflib.f/src/cdfbin.f
+END
+bup.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/randltc/!svn/ver/5/trunk/dcdflib.f/src/bup.f
+END
+cdfbet.f
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/randltc/!svn/ver/5/trunk/dcdflib.f/src/cdfbet.f
+END
