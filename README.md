@@ -12,20 +12,20 @@ Four pieces of software are needed to reproduce the results in the paper:
 * Python: we use [Anaconda Python distribution](https://www.anaconda.com/distribution/) 
 * Stata: [Stata MP v15](https://www.stata.com/) 
   
-Other versions and compilers are possible but users will need to make appropriate changes to programs and makefile. The main fortran executables were executed on an HPCC running the scheduler [SLURM](https://slurm.schedmd.com/documentation.html). All other programs can run on a standard machine. Paths need to be set at various places clearly identified at the beginning of each programs. 
+Other versions and compilers are possible but users will need to make appropriate changes to programs and makefile. The main fortran executables were executed on an HPCC running the scheduler [SLURM](https://slurm.schedmd.com/documentation.html). All other programs can run on a standard machine. Paths need to be set at various places clearly identified at the beginning of each program. 
 
 ## Data Access
 
 The following raw micro datasets are used for this project. 
 
 * The Panel Study of Income Dynamics: We use the files provided by [The Cross National Equivalent File project](https://cnef.ehe.osu.edu/). 
-* The Medical Expenditure Panel Study: We use the files from the [website](https://www.meps.ahrq.gov/mepsweb/). 
+* The Medical Expenditure Panel Study: We use the files from this [website](https://www.meps.ahrq.gov/mepsweb/). 
 * The National Health Interview Survey Mortality Follow-Up Study: We use the files available at this [website](https://www.cdc.gov/nchs/data-linkage/mortality.htm). 
 * The Health and Retirement Study: We have used version G of [RANDHRS](https://www.rand.org/well-being/social-and-behavioral-policy/centers/aging/dataprod/hrs-data.html)
 * The National Health Expenditure Accounts: [website](https://www.cms.gov/Research-Statistics-Data-and-Systems/Statistics-Trends-and-Reports/NationalHealthExpendData/index)
 * Other small datasets and parameter files described in paper
 
-They are included in the [data](data/) folder. But users are responsible for obtaining registration to use these files with the relevant organizations (for example HRS) and the linked mortality data for MEPS-NHIS.
+They are included in the data folder which will appear once unziped (data.zip). But users are responsible for obtaining registration to use these files with the relevant organizations (for example HRS) and the linked mortality data for MEPS-NHIS.
 
 ## Code and Data Archive 
 
@@ -35,17 +35,17 @@ This archive has the following directories:
 
 * [py](py/): contains all python programs and notebooks that generate also inputs as well as tables and figures in paper. 
   
-* [data](data/): described above. contains all data used in paper. the folder clean will contain stata datasets created by the programs. 
+* data: once unzipped, described above. contains all data used in paper. the folder clean will contain stata datasets created by the programs. 
 
 * [params](params/): contains parameter files that are produced from do and py programs as well as settings to run the model. 
   
-* [figures](figures/) and [tables](tables/): these are empty but upon execution contain the outputs from do and py programs. 
+* [figures](figures/): empty but upon execution contain the outputs from do and py programs. 
 
 * [src](src/): contains the source fortran files to run the model
 
 * [runtime](runtime/): contains the executables, once make has been run. 
   
-* [lib](lib/): contains two libraries used by the fortran programs: [dcdflib](https://person.hst.aau.dk/magnus/pkgsrc-kolga/math/dcdflib.f/), which is a statistical library and [newuoa](https://en.wikipedia.org/wiki/NEWUOA) which contains the optimization routines. 
+* [libs](libs/): contains two libraries used by the fortran programs: [dcdflib](https://person.hst.aau.dk/magnus/pkgsrc-kolga/math/dcdflib.f/), which is a statistical library and [newuoa](https://en.wikipedia.org/wiki/NEWUOA) which contains the optimization routines. 
    
 ## Compilation of Fortran Code 
 
@@ -74,10 +74,10 @@ Depending on starting values you use, this may take a number of days/weeks to ru
 
 The following list contains the source program used to create each table and figures. 
 
-* Figure 1: [do/fig1-Historical.ipynb](do/fig1-Historical.ipynb)
+* Figure 1: [py/fig1-Historical.ipynb](do/fig1-Historical.ipynb)
 * Figure 2: [do/production32.do](do/production32.do)
 * Figure 3: [py/fig3-fit.py](py/fig3-fit.py)
-* Figure 4: [py/production.py](py/production.py)
+* Figure 4: [py/fig4-production.py](py/production.py)
 
 * Table 1: [do/auxiliary32.do](do/auxiliary32.do)
 * Table 2: [do/production32.do](do/production32.do)
