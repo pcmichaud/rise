@@ -46,7 +46,9 @@ This archive has the following directories:
 * [runtime](runtime/): contains the executables, once make has been run. 
   
 * [libs](libs/): contains two libraries used by the fortran programs: [dcdflib](https://person.hst.aau.dk/magnus/pkgsrc-kolga/math/dcdflib.f/), which is a statistical library and [newuoa](https://en.wikipedia.org/wiki/NEWUOA) which contains the optimization routines. 
-   
+
+* [output.zip](output.zip) contains all the simulated datasets and decision rules in the paper. Once unzipped, creates output directory. 
+
 ## Compilation of Fortran Code 
 
 To build executables, there is a [Makefile](Makefile) that is also supplied in the root directory of this archive. Please check carefully to adapt to the particular environment in which we run calculations. Running make at the terminal will create the executables estimate and generate. 
