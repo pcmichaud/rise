@@ -1,8 +1,10 @@
 # Accounting for the Rise of Health Spending and Longevity
 Raquel Fonseca, Pierre-Carl Michaud, Titus Galama and Arie Kapteyn 
 [Journal of European Economic Association](https://academic.oup.com/jeea)
-[![DOI](https://zenodo.org/badge/232669891.svg)](https://zenodo.org/badge/latestdoi/232669891)
+
 December 2019
+
+[![DOI](https://zenodo.org/badge/232669891.svg)](https://zenodo.org/badge/latestdoi/232669891)
 
 ## Software needed 
 
